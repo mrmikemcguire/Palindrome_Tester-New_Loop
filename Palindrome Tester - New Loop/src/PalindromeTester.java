@@ -1,9 +1,13 @@
+import java.util.Scanner;
 
 public class PalindromeTester
 	{
 		public static void main(String[] args)
 			{
-			String [] s = {"d", "a", "k", "a", "d"};
+			Scanner userInput = new Scanner(System.in);
+			System.out.println("Please input your word.");
+			String word = userInput.next();
+			String [] s = word.split("");
 
 			for(int beg = 0, end = s.length - 1; beg <= end; beg++, end--)
 				{
